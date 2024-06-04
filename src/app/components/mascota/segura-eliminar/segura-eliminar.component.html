@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>¿Estás seguro que desea eliminar?</h2>
+
+<mat-dialog-content>
+  <p>Esta acción no se puede revertir</p>
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+  <button mat-flat-button id="btn-cancel" mat-dialog-close>Cancelar</button>
+  <button
+    mat-flat-button
+    id="btn-submit"
+    color="primary"
+    [mat-dialog-close]="true"
+    cdkFocusInitial
+  >
+    Eliminar
+  </button>
+</mat-dialog-actions>
